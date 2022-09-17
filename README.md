@@ -12,7 +12,7 @@ How it works
 
 It scans every chapter in the book for the regex `\{\{\s*#(rustdoc_)?include\s+([\.[:word:][:space:]/]+\.rs)`, extracts capture group 2 (the supposed source file path), and check that file's modified time against the current chapter's source file's modified time
 
-This will match the following regexes:
+This will match the following strings:
 ```
 {{#include test.rs}}
 {{ #rustdoc_include	filename with spaces.rs }}
